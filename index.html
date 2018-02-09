@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+	<head>
+		<title>Responsive Content Slider</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="Shortcut Icon" href="images/sm-favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="function.js"></script>
+ 	</head>
+	<body>
+		<!-- section for the content wherein your trigger will be featured -->
+		<section class="content-wrap">
+		  <div class="content">
+		    <h1>Lightbox for Content</h1>
+		    <p>Lightboxes can be used to display all kinds of information. Typically, clients want one of a handful of things: content, videos, forms, or galleries. The gallery functionality is a bit different, so that's featured in a separate section. But all the others can be found here. Click the appropriate button to see the lightbox.</p>
+		    <p><strong>Show Me ...</strong></p>
+		    <p>
+		      <a href="#content" class="button">Content</a> &nbsp; <a href="#video" class="button">Video</a> &nbsp; <a href="#form" class="button">Form</a>
+		    </p>
+		  </div><!--/content-->
+		</section><!--/content-wrap-->
+
+		<!-- section for our lightbox -->
+		<section class="lightbox-wrap">
+		  <div class="lightbox">
+		    <a id="close">x</a>
+		    <!-- note the "ids" match the "hrefs" of our trigger buttons -->
+		    <div id="content" class="cont">
+		      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id sodales felis, non facilisis ante. Suspendisse risus ante, maximus quis posuere id, tristique et elit. Fusce erat justo, tempus quis ex et, pellentesque fermentum risus. Aenean cursus ligula non orci pretium, vel feugiat massa viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ac dictum elit. Phasellus sed iaculis massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec quis mi dui. Vestibulum imperdiet dignissim mi, quis maximus velit lacinia et. Quisque id orci mi. Maecenas dapibus commodo tempus. Cras ornare massa non dapibus sagittis.</p>
+		    </div><!--/cont-->
+		    <div id="video" class="cont">
+		      <iframe width="100%" height="315" src="https://www.youtube.com/embed/bI7O40OEHRg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		    </div><!--/cont-->
+		    <div id="form" class="cont">
+		      <form>
+		        <input type="text" placeholder="Name" />
+		        <input type="email" placeholder="Email" />
+		        <input type="phone" placeholder="Phone Number" />
+		        <textarea placeholder="Message"></textarea>
+		        <input type="submit" value="Submit" />
+		      </form>
+		    </div><!--/cont-->
+		  </div><!--/ligthbox-->
+		</section><!--lightbox-wrap-->
+	</body>
+</html>
